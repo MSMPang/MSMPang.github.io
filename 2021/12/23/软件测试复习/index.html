@@ -16,7 +16,7 @@
 <meta property="og:description" content="第一章软件测试的定义 1983年IEEE提出的软件工程标准术语中给软件测试下的定义是 &#x3D;&#x3D;使用人工或自动手段来运行或测定某个系统的过程，其目的在于检验它是否满足规定的需求或是弄清预期与实际结果之间的差别&#x3D;&#x3D; &#x3D;&#x3D;软件测试是根据软件开发各阶段的规格说明和程序的内部结构而精心设计一批测试用例，并利用这些测试用例去执行程序，以发现软件故障的过程。该定义强调寻找故障是测试的目的&#x3D;&#x3D; &#x3D;&#x3D;软件测试是一种软件">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-23T13:51:16.312Z">
-<meta property="article:modified_time" content="2021-12-23T15:35:25.819Z">
+<meta property="article:modified_time" content="2021-12-24T03:10:43.135Z">
 <meta property="article:author" content="陌人">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
@@ -228,7 +228,6 @@
 <li>==<strong>软件测试是一种软件质量保证活动，其动机是通过一些经济有效的方法，发现软件中存在的缺陷，从而保证软件质量</strong>==</li>
 </ul>
 <span id="more"></span>
-
 <h5 id="常见软件测试工具"><a href="#常见软件测试工具" class="headerlink" title="常见软件测试工具"></a>常见软件测试工具</h5><ul>
 <li>loadRunner</li>
 <li>WinRunner</li>
@@ -286,32 +285,32 @@
 <li>模拟攻击试验 </li>
 <li>侦听技术</li>
 </ul>
-<h4 id="可靠性测试"><a href="#可靠性测试" class="headerlink" title="可靠性测试"></a>可靠性测试</h4><p>==<strong>可靠性测试：对于存在于软件S中的n个故障f<del>1</del>，f<del>2</del>，…，f<del>n</del>，如果这n个故障是已知的，则可以通过一些方法计算出软件的可靠性，如果这个n个故障是已知的，则可以通过一些方法计算出软件的可靠性</strong>==</p>
+<h4 id="可靠性测试"><a href="#可靠性测试" class="headerlink" title="可靠性测试"></a>可靠性测试</h4><p>==<strong>可靠性测试：对于存在于软件S中的n个故障f~1~，f~2~，…，f~n~，如果这n个故障是已知的，则可以通过一些方法计算出软件的可靠性，如果这个n个故障是已知的，则可以通过一些方法计算出软件的可靠性</strong>==</p>
 <ol>
 <li>故障率(风险函数)  </li>
 </ol>
-<p>$\lambda$​ =$\frac {总失效次数} {总工作时间}$​​=$\frac {n} {\sum_{i=1}^n t<del>i</del>}$​​</p>
-<ol start="2">
+<p>$\lambda$​ =$\frac {总失效次数} {总工作时间}$​​=$\frac {n} {\sum_{i=1}^n t~i~}$​​</p>
+<ol>
 <li>维修率</li>
 </ol>
-<p>$\mu$=$\frac {总失效次数} {总维护时间}$=$\frac {n} {\sum_{i=1}^n T<del>i</del>}$</p>
-<ol start="3">
+<p>$\mu$=$\frac {总失效次数} {总维护时间}$=$\frac {n} {\sum_{i=1}^n T~i~}$</p>
+<ol>
 <li>平均无故障时间</li>
 </ol>
-<p>MTBF=$\frac {总工作时间} {总维护时间}$​=$\frac {\sum_{i=1}^n t<del>i</del>} {n}$​=$\frac {1}{\lambda}$​</p>
-<ol start="4">
+<p>MTBF=$\frac {总工作时间} {总维护时间}$​=$\frac {\sum_{i=1}^n t~i~} {n}$​=$\frac {1}{\lambda}$​</p>
+<ol>
 <li>平均维护时间</li>
 </ol>
-<p>MTTR = $\frac {总维护时间} {总失效次数}$ = $\frac {\sum_{i=1}^n T<del>i</del>} {n}$ = $\frac {1}{\mu}$</p>
-<ol start="5">
+<p>MTTR = $\frac {总维护时间} {总失效次数}$ = $\frac {\sum_{i=1}^n T~i~} {n}$ = $\frac {1}{\mu}$</p>
+<ol>
 <li>有效度</li>
 </ol>
 <p>A = $\frac {总工作时间} {总工作时间+总维护时间}$ = $\frac {MTBF} {MTBF+MTTR}$ =  $\frac {\mu}{\lambda+\mu}$</p>
-<ol start="6">
-<li>残留的缺陷数目N<del>0</del></li>
+<ol>
+<li>残留的缺陷数目N~0~</li>
 </ol>
 <p>可以采用第2章叙述的方法进行估计</p>
-<ol start="7">
+<ol>
 <li>可靠性</li>
 </ol>
 <p>R(t) = e$-\int_{0}{t}\lambda(t)dt$</p>
@@ -356,7 +355,7 @@
       </li> 
     <li class="copyright_update-time">
         <strong >最后更新：</strong>
-        <time datetime="2021-12-23T15:35:25.819Z" itemprop="dateUpdated">2021年12月23日 23:35:25</time>
+        <time datetime="2021-12-24T03:10:43.135Z" itemprop="dateUpdated">2021年12月24日 11:10:43</time>
     </li>
     <!-- 有需要的可以取消注释 -->
   
@@ -817,5 +816,22 @@ MathJax.Hub.Queue(function() {
 
 </div>
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!--<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 </body>
 </html>
